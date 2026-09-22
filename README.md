@@ -1,3 +1,4 @@
+Example code ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ```python
 async def clock_in(self, ctx, job_id: int):
     async with self.bot.db.acquire() as conn:
