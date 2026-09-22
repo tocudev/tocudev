@@ -1,4 +1,4 @@
-Example code ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white)
 ```python
 async def clock_in(self, ctx, job_id: int):
     async with self.bot.db.acquire() as conn:
