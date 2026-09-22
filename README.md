@@ -1,50 +1,16 @@
-<div align="center">
-
-# tocu
-
-python developer. i build backend systems and discord bots.
-
----
-
-## what i do
-
-i write python. mostly backend logic, automation, and discord bots.
-i don't do frontend. i let tools handle the ui so i can stay in python.
-
----
-
-## projects
-
-### ledger
-a living economy bot for discord. persistent simulation.
-every action is recorded and every record has consequences.
-
-repo: https://github.com/tocudev/ledger-docs
-
-### other projects
-replace this with your actual repos. keep it short. one line each.
-
----
-
-## stack
-
-python
-discord.py
-git
-debian
-
----
-
-## stats
-
-![stats](https://github-stats-extended.vercel.app/api?username=tocudev&show_icons=true&theme=dark&hide_border=true)
-
-![top langs](https://github-stats-extended.vercel.app/api/top-langs/?username=tocudev&layout=compact&theme=dark&hide_border=true)
-
-![streak](https://streak-stats.demolab.com?user=tocudev&theme=dark&hide_border=true)
-
----
-
-github: https://github.com/tocudev
-
-</div>
+```python
+async def clock_in(self, ctx, job_id: int):
+    async with self.bot.db.acquire() as conn:
+        j = await conn.fetchrow("select * from jobs where id=$1 and guild=$2", job_id, ctx.guild.id)
+        if not j:
+            return await ctx.send("no job")
+        if j["worker"] != ctx.author.id:
+            return await ctx.send("not yours")
+        if j["clocked"]:
+            return await ctx.send("already on")
+        await conn.execute("update jobs set clocked=true, last_in=$1 where id=$2", datetime.utcnow(), job_id)
+        await ctx.send("clocked in")
+        if j["missed"] >= 3:
+            await conn.execute("update jobs set worker=null, clocked=false where id=$1", job_id)
+            await ctx.send("fired")
+```
