@@ -27,15 +27,22 @@ I specialize in Python, focusing on backend systems, logic, and automation. I do
 ### 📊 GitHub Stats
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tocudev&show_icons=true&theme=transparent&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tocudev&layout=compact&theme=transparent&hide_border=true)
+![GitHub Stats](https://github-stats-extended.vercel.app/api?username=tocudev&show_icons=true&theme=transparent&hide_border=true)
+![Top Langs](https://github-stats-extended.vercel.app/api/top-langs/?username=tocudev&layout=compact&theme=transparent&hide_border=true)
 
 </div>
 
-### 📈 Activity Graph
+### 🔥 Contribution Streak
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=tocudev&theme=react-dark&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![GitHub Streak](https://streak-stats.demolab.com?user=tocudev&theme=transparent&hide_border=true)](https://git.io/streak-stats)
+
+</div>
+
+### 🏆 Trophy Case
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=tocudev&theme=onedark&no-frame=true&column=4)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
