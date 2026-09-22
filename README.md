@@ -1,3 +1,5 @@
+<div align="center">
+
 # tocu
 
 python developer. i build backend systems and discord bots.
@@ -26,10 +28,10 @@ replace this with your actual repos. keep it short. one line each.
 
 ## stack
 
-- python
-- discord.py
-- git
-- debian
+python
+discord.py
+git
+debian
 
 ---
 
@@ -43,6 +45,6 @@ replace this with your actual repos. keep it short. one line each.
 
 ---
 
-## contact
-
 github: https://github.com/tocudev
+
+</div>
