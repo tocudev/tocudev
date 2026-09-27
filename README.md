@@ -15,3 +15,12 @@ async def clock_in(self, ctx, job_id: int):
             await conn.execute("update jobs set worker=null, clocked=false where id=$1", job_id)
             await ctx.send("fired")
 ```
+
+<table style="border-collapse: collapse; width: 100%; font-family: sans-serif;">
+  <tr>
+    <td style="border-left: 4px solid #5865F2; background-color: #f2f3f5; padding: 12px; border-radius: 4px;">
+      <strong style="color: #5865F2;">Embed Title</strong><br>
+      <span style="color: #333333; font-size: 14px;">This is the description of your custom embed. You can type whatever you want here, and it will look like a Discord embed!</span>
+    </td>
+  </tr>
+</table>
