@@ -16,4 +16,4 @@ async def clock_in(self, ctx, job_id: int):
             await ctx.send("fired")
 ```
 
-[![Discord Presence](https://lanyard.cnrad.dev/api/:id)](https://discord.com/users/945153450541461504)
+[![Discord Presence](https://lanyard.cnrad.dev/api/945153450541461504)](https://discord.com/users/945153450541461504)
